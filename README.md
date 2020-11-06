@@ -20,4 +20,4 @@ Replace `[name]` with the name of the application
 ### Run container
 Replace `[BASE_URL]` with the base URL.
 
-`sudo docker run -d -e -u candide-availability HEALTH_CHECK_BASE_URL=[BASE_URL] [name]:v1.0`
+`sudo docker run -d -e HEALTH_CHECK_BASE_URL=[BASE_URL] [name]:v1.0`
