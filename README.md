@@ -4,19 +4,20 @@
 
 For testing and developing use `.env` for the base URL
 
-To run locally use
-[`npm install`]
+### To run locally
 
-[`node app.js`] 
+Install packages - [`npm install`]
 
-## Build and Run
+Run the application - [`node app.js`] 
 
-### Build
+## Building and deploying
+
+### Build container
 Replace `[name]` with the name of the application
 
 `sudo docker build -t [name]:v1.0 .`
 
-### Run
+### Run container
 Replace `[BASE_URL]` with the base URL.
 
 `sudo docker run -d -e -u candide-availability HEALTH_CHECK_BASE_URL=[BASE_URL] [name]:v1.0`
